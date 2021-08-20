@@ -85,6 +85,7 @@ const attack=()=>{//a way to lower the enemy hitpoints
         if(user.charge >= 1){
         let attackRoll = (Math.floor(Math.random() * 11))
           if(attackRoll > 1 && attackRoll <= 10){
+            attackBox.src = "image.png"
               enemy.hp -= user.specdps + (Math.floor(Math.random() * user.charge))
               user.charge--
               alert("You did " + user.specdps + " damage. The demon's health is at " + enemy.hp)
@@ -121,6 +122,7 @@ const attack=()=>{//a way to lower the enemy hitpoints
         if(user.charge >= 3){
         let attackRoll = (Math.floor(Math.random() * 21))
           if(attackRoll > 1 && attackRoll <= 20){
+            attackBox.src = "image.png"
               alert("You attack with your ultimate")
               user.charge-=3
               enemy.hp -= user.ult + (Math.floor(Math.random() * user.charge))
