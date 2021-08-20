@@ -1,0 +1,32 @@
+#container{
+    display: flex;
+    background-color: grey;
+    height: auto;
+    width: 1200vw;
+    flex-wrap: wrap;
+}
+
+#images{
+    border: 1px black solid;
+    width: 100vw;
+    display: flex;
+}
+#monk{
+    height: 50vh;
+    width: 20vw;
+}
+#enemy{
+    height: 50vh;
+    width: 20vw;
+}
+#heading{
+    background-color: red;
+    color: black;
+    text-align:center;
+}
+.button{
+    display:flex;
+}
+#donthateme{
+    background-color: coral;
+}

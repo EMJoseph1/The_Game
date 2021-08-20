@@ -7,12 +7,37 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     
+    
 </head>
-<body>
-<button id="Attack" onclick="attack()"> Attack</button>
-<button id="Special-Attack" onclick="specAttack()">Special-Attack</button>
-<button id="Heal" onclick="heal()"> Heal </button>
+<body id="donthateme">
+<h1 id="heading">THE GREATEST BATTLE EVER</h1>
+<div id="container">
 
+<div id="firstPlayerButtonBox">
+    <button class="button"  onclick="attack()"> Attack</button>
+    <button class="button"  onclick="specAttack()">Special Attack</button>
+    <button class="button"  onclick="ultAttack()">Ultimate Attack</button>
+    <button class="button"  onclick="heal()"> Heal </button>
+    <button class="button"  onclick="chargeUp()"> Charge </button>
+    <button class="button" onclick="displayStats()"> Stats </button>
+</div>
+
+
+<div id="images" >
+<img src="monk.png" alt="" id="monk">
+<img src="background.jpg" alt="" id="attackBox">
+<img src="minotaur-red-NESW.jpg" alt="" id="enemy">
+</div>
+</div>
+
+<p>Intructions: You must slay the big horn demon to reach enlightenment (and the treasure of course). 
+    Do a normal attack or charge up to do a special or Ultimate attack!
+    Charge up once for a special or three times for an Ultimate!
+    
+    Don't forget you can heal if you are in a pinch but you are no doctor so be careful!
+    Feel free to check your or your enemy's stats with the Stat buttton.
+    Good luck, have fun and don't die!
+</p>
 <script src="app.js"></script> 
 </body>
 </html>
