@@ -70,6 +70,7 @@ const attack=()=>{//a way to lower the enemy hitpoints
 
     const chargeUp=()=>{
        user.charge++
+       attackBox.src = "monk2.png"
         alert("Your charge has increased to " + user.charge)
         autoMove()
         if(user.hp <= 0){
@@ -162,7 +163,6 @@ const attack=()=>{//a way to lower the enemy hitpoints
 const heal=()=>{
     let healingRoll = (Math.floor(Math.random() * 21))
     if(healingRoll > 5 && healingRoll < 20){
-        attackBox.src = "monk2.png"
         alert("Normal Heal")
         user.hp = user.hp + (Math.floor(Math.random() * 50))
         alert("Your health is now " + user.hp) 
@@ -183,7 +183,6 @@ const heal=()=>{
         attackBox.src = "background.jpg"
     }
     else{
-        attackBox.src ="monk2.png"
         alert("Max Healing")
         user.hp = user.hp + 50
         alert("Your health is now " + user.hp)
@@ -210,14 +209,14 @@ const attack2=()=>{//a way to lower the enemy hitpoints
         user.hp -= enemy.dps + (Math.floor(Math.random() * enemy.charge))
           alert("The demon did " + enemy.dps + " damage! Player one is at " + user.hp + " health points!")
           if(enemy.hp <= 0){
-            alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+            alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
         }
           //want to subtract the player dps from the enemy hp
       }
       else if (attackRoll == 0 || attackRoll == 1){
             alert("The demon missed!")
             if(enemy.hp <= 0){
-                alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+                alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
             }
           //nothing happens
       }
@@ -226,12 +225,12 @@ const attack2=()=>{//a way to lower the enemy hitpoints
             user.hp -= (2 * enemy.dps + (Math.floor(Math.random() * enemy.charge)))
             alert("A crit! The demon did " + (2 * enemy.dps) + " damage to you! You are at " + user.hp + " health points!")
             if(enemy.hp <= 0){
-                alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+                alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
             }
           //double dps and subtract it from the enemy hp
       }
       if(enemy.hp <= 0){
-        alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+        alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
     }
     }
     //attack(user, enemy) =  document.querySelector(".Attack").value
@@ -241,7 +240,7 @@ const attack2=()=>{//a way to lower the enemy hitpoints
        enemy.charge++
         alert("The demon charge has increased to " + enemy.charge)
         if(enemy.hp <= 0){
-            alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+            alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
         }
     
     }
@@ -256,7 +255,7 @@ const attack2=()=>{//a way to lower the enemy hitpoints
               user.hp -= enemy.specdps + (Math.floor(Math.random() * enemy.charge))
               alert("The demon did " + enemy.specdps + " damage. You are at " + user.hp + " hitpoints")
               if(enemy.hp <= 0){
-                alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+                alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
             }
               //want to subtract the player dps from the enemy hp
           }
@@ -264,13 +263,13 @@ const attack2=()=>{//a way to lower the enemy hitpoints
             enemy.charge--
             alert("The demon missed!")
             if(enemy.hp <= 0){
-                alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+                alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
             }
               //nothing happens
           }
         }
         else{
-            alert("Player Two does not have enough charge for a special attack")
+            alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
         }
         if(enemy.hp <= 0){
             alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
@@ -287,7 +286,7 @@ const attack2=()=>{//a way to lower the enemy hitpoints
               user.hp -= enemy.ult + (Math.floor(Math.random() * enemy.charge))
               alert("The demon did " + enemy.ult + " damage. Your health is at " + user.hp + " health points")
               if(enemy.hp <= 0){
-                alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+                alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
             }
               //want to subtract the player dps from the enemy hp
           }
@@ -301,7 +300,7 @@ const attack2=()=>{//a way to lower the enemy hitpoints
             alert("Player Two does not have enough charge for their ultimate move")
         }
         if(enemy.hp <= 0){
-            alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+            alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
         }
     }
   
@@ -326,7 +325,7 @@ const heal2=()=>{
         alert("Demon's health is now " + enemy.hp)
     }
     if(enemy.hp <= 0){
-        alert("IM CHAMPION, IM CHAMPION!!!! Refresh to play again")
+        alert("I'M LIKE THAT HOMIE, I'M LIKE THAT! I TRY TO TELL PEOPLE, I TRY TO WARN THEM!..... I'M Like that HOMIE!")
     }
 
 }
